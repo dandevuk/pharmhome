@@ -1,0 +1,518 @@
+:root {
+	--color-one: #187795 ;
+	--color-two: #D1D1D1 ;
+	--color-three: #3DDC97 ;
+	--color-four: #279AF1 ;
+}
+
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	border: none;
+	background-color: var(--color-three);
+	border-radius: 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+	color: #333
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0099cc;
+	text-decoration: underline;
+}
+
+body {
+	background-color: #d1d1d1;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 0.75em;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-size: 1.2em;
+	margin:0;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	/*font-family: 'Dosis', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	box-shadow: 1px 1px 3px 3px rgba(0,0,0,0.2)
+}
+
+h4 {
+	font-size: 1em;
+	margin:0;
+	margin-bottom: 7px
+}
+
+h5 {
+	font-size: 0.8em;
+	margin:0;
+}
+
+ul {
+	list-style: none;
+	margin-left: -40px;
+}
+/* ============ FORMS ============= */
+input {
+	display: block;
+	min-width: calc(100% - 4px);
+	border-radius: 10px;
+	border: 2px solid var(--color-four);
+	margin: 4px 0;
+	padding: 3px 2px
+}
+
+textarea {
+	display: block;
+	min-width: calc(100% - 4px);
+	border-radius: 10px;
+	border: 2px solid var(--color-four);
+	margin: 4px 0;
+	padding: 3px 2px
+}
+
+.error-message {
+	color: red
+}
+
+img {
+	width: 100%
+}
+
+header {
+	width: 100vw;
+	max-width: 100%;
+	background-color: var(--color-one);
+	padding: 2px 0;
+	color: #fff!important;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	border-bottom: 2px solid var(--color-four)
+}
+
+.header {
+	display: flex;
+	position: relative;
+}
+
+.headerLogo {
+	width: 140px;
+	margin: 0 10px;
+	margin-top: 5px
+}
+
+.headerLogo img {
+	width: 100%
+}
+
+.headerLogin {
+	position: absolute;
+	top: 50%;
+	right: 2px;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerLogin button {
+}
+
+header .important-notice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%
+}
+
+header .important-notice .important-notice-info {
+	font-size: 0.8em;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 1px 10px 1px 0;
+	color: #333;
+}
+
+header .important-notice .important-notice-info span {
+	font-size: 0.8em;
+	border-radius: 3px;
+	background-color: red;
+	padding: 3px 10px;
+	color: #fff;
+}
+
+nav {
+	background-color: #d1d1d1 /*#bdbcbc*/;
+	color: #333;
+	width: 120px;
+	position: fixed;
+	height: calc(100vh - 10px);
+	max-height: 100%;
+	padding: 0px 20px;
+	padding-top: 10px
+}
+
+nav span {
+	font-size: 0.8em;
+	border-radius: 0 3px 3px 0;
+	background-color: #333;
+	padding: 2px 4px;
+	border-left: 4px solid #3DDC97;
+	color: #fff
+}
+
+nav ul {
+	margin-bottom: 20px
+}
+
+nav ul li {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 6px 0;
+}
+
+nav h2 {
+	box-shadow: none
+}
+
+.menu-icon {
+	width: 20px;
+	text-align: center;
+	margin-right: 5px;
+	color: var(--color-one)
+}
+
+nav ul li:hover .menu-icon {
+	color: #0099cc;
+	font-weight: bold
+}
+
+.quick-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.quick-links > div {
+	width: 32%;
+}
+
+.quick-links > div img {
+	width: 100%;
+	filter: grayscale(100);
+}
+
+.quick-links > div img:hover {
+	filter: grayscale(0);
+}
+
+main {
+	margin-left: 160px;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	background-color: : #d1d1d1;  
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px
+}
+
+section {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 5px;
+	text-align: center;
+	box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0,0,0,0.1);
+	position: relative;
+}
+
+section h2 {
+	background-color: var(--color-four) /*#0099cc*/;
+	border-radius: 5px;
+	padding: 2px;
+	color: #fff
+}
+
+section-container {
+	background-color: #99ccff;
+	border-radius: 5px;
+	width: 100%;
+	padding: 1%;
+	margin-bottom: 5px
+}
+
+section table {
+    border: 0;
+    width: 100%
+}
+
+section table tr td {
+    padding: 8px 5px
+}
+
+section table tr:nth-child(odd) {
+    background-color: #e1f3ff
+}
+
+section > table tr:nth-child(even) {
+    background-color: #ebecec
+}
+
+section  table tr td:first-child {
+    width: 80%;
+    color: #333;
+    font-weight: 600
+}
+
+section table tr td:last-child {
+    color: var(--darkBlue);
+    font-weight: 600;
+    text-align: center;
+}
+
+section table tr td button {
+    color: #fff;
+    background-color: #287dce;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.6s all
+}
+
+section > div table tr td button:hover {
+    background-color: #0e60b9;
+}
+
+.table-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.table-container > div {
+	width: 48%
+}
+
+#jaccodes h3, #expiry-dates h3 {
+	background-color: lightgrey
+}
+
+#pharmacy-performance, #label-errors, #news {
+	width: calc(28% - 40px);
+}
+
+#huddle {
+	width: calc(72% - 40px)
+}
+
+#top-three {
+	width: calc(44% - 40px)
+}
+
+.top-three-img {
+	position: absolute;
+	top: -5px;
+	left: 10%;
+	width: 70px
+}
+
+.main-report, .full-width {
+	width: 100%
+}
+
+.third-width {
+	width: calc(33% - 40px)
+}
+
+.main-report iframe {
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto
+}
+
+.huddle-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.huddle-sickness {
+	width: 14%;
+	background-color: lightgrey;
+	border-radius: 5px
+}
+
+.huddle-sickness ul {
+	text-align: left;
+	margin-left: -20px
+}
+
+.huddle-sickness ul li {
+	margin: 3px 0;
+}
+
+.huddle-info {
+	width: 82%;
+	background-color: #e1e1e1;
+	padding: 2px;
+	border-radius: 5px
+}
+
+.huddle-info-wrapper {
+	display: flex;
+	flex-wrap: wrap
+}
+
+.huddle-info-container {
+	min-width: calc(20% - 2px);
+	max-width: calc(20% - 2px);
+	min-height: 30px;
+	margin: 5px 1px
+}
+
+.huddle-info-text {
+	background-color: #99ccff;
+	border-radius: 5px;
+	padding: 1%
+}
+
+.noro-info-wrapper {
+	border-radius: 5px;
+	background-color: #67aef4 /*#66ff99*/;
+	padding: 1px 2px;
+	margin: 3px 6px;
+	display: flex
+}
+
+.noro-info-container {
+	width: calc(25% - 8px);
+	margin: 3px 4px;
+	background-color: #fff;
+	border-radius: 5px
+}
+
+.noro-info-container h3, .huddle-sickness h3 {
+	background-color: var(--color-four);
+	margin-top: 0;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-weight: normal;
+}
+
+.noro-info-container span {
+	font-size: 3em;
+	font-weight: 900;
+	background-color: red;
+	border-radius: 8px;
+	padding: 5px 8px;
+	color: #fff
+}
+
+.performance-charts-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.performance-charts-container {
+	width: 40%;
+	margin: 1%
+}
+
+.performance-chart {
+	width: calc(80% - 0.4em);
+	border-radius: 50%;
+	border: 0.4em solid #0099cc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vw;
+	margin-bottom: 10px;
+	background-color: transparent;
+}
+
+.green-ring {
+	border-color: #66ff99
+}
+
+.amber-ring {
+	border-color: #fde561
+}
+
+.red-ring {
+	border-color: #ea5e5e
+}
+
+.performance-chart:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.news-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.news-container, .top-three-container {
+	background-color: #99ccff;
+	border-radius: 5px;
+	width: 100%;
+	padding: 1%;
+	margin-bottom: 5px
+}
+
+.news-container:nth-child(odd), .top-three-container:nth-child(odd) {
+	background-color: #67aef4
+}
+
+.news-container h5 {
+	background-color: var(--color-one);
+	padding: 2px 0;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: normal;
+}
+
+footer {
+	width: 100vw;
+	max-width: 100%;
+	background-color: #333;
+	color: #fff;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	font-size: 0.8em
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	display: inline-block;
+	margin: 0 4px
+}
